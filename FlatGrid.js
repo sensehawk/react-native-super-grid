@@ -144,6 +144,7 @@ class FlatGrid extends React.Component {
           },
           style,
         ]}
+        initialNumToRender={(rows && rows.length) || 0}
         onLayout={this.onLayout}
         keyExtractor={(_, index) => `row_${index}`}
         {...restProps}
